@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head> <!-- Encabezado del documento HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases de Canto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header> <!-- Encabezado de la página -->
+
+    <h1>Clases de Canto</h1> <!-- Título principal de la página -->
+
+    <nav> <!-- Barra de navegación -->
+        <a href="hero">Inicio</a>
+        <a href="sobre">Sobre mi</a>
+        <a href="blog">Blog</a>
+        <a href="contacto">Reservar clase</a>
+    </nav>
+
+</header>
+
+<section id="hero" class="hero reveal"> <!-- Seccion de Hero-->
+
+    <h2>Descubri tu verdadera voz</h2>
+    <p>Clases de canto personalizadas para desarrollar tu tecnica vocal</p>
+
+    <button onclick="scrollToform()">Comenzar Clases</button>  <!-- Botón para desplazarse al formulario de contacto -->
+
+</section>
+
+<section id="sobre" class="reveal"> <!-- Seccion de Sobre mi-->
+
+    <h2>Sobre mi</h2>
+
+    <p>Soy un cantante profesional con mas de 10 años de experiencia en la industria musical. He trabajado con diversos artistas y tengo una amplia experiencia en la enseñanza del canto.</p>
+    <p> Mi objetivo es ayudarte a descubrir tu verdadera voz y desarrollar tu tecnica vocal para que puedas alcanzar tus metas musicales.</p>
+
+</section>
+
+<section id="blog" class="reveal"> <!-- Seccion de Blog-->
+    <h2>Blog de tecnica vocal</h2>
+
+    <div class="articulos"> <!-- Contenedor para los artículos del blog -->
+
+        <div class="articulo">
+            <h3>Tecnicas de respiracion</h3>
+            <p>Aprende a controlar el aire para mejorar estabilidad y potencia vocal</p>
+        </div>
+        
+        <div class="articulo">
+            <h3>Como mejorar la voz</h3>
+            <p>Ejercicio simple para afinacion y proyeccion de voz</p>
+        </div>
+
+        <div class="articulo">
+            <h3>Calentamientos vocales</h3>
+            <p>Rutinas basicas para preparar tu voz antes de cantar</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contacto" class="reveal"> <!-- Seccion de Contacto-->
+
+    <h2>Reservar clase</h2>
+
+    <form id="formulario"> <!-- Formulario de contacto para reservar una clase de canto -->
+        <label>Nombre</label> <input type="text" placeholder="Tu nombre" required>
+        
+        <label>Email</label> <input type="email" placeholder="Tu email" required>
+        
+        <Label>Nivel de canto</Label>
+
+        <Select id="nivel"> <!-- Lista desplegable para seleccionar el nivel de canto -->
+            <option>Principiante</option>
+            <option>Intermedio</option>
+            <option>Avanzado</option>
+        </Select>
+
+        <button type="submit">Reservar clase</button> <!-- Botón para enviar el formulario de reserva de clase -->
+    </form>
+        
+</section>
+
+<footer>
+
+    <p>© 2026 Clases de canto</p>
+
+</footer>
+
+<!-- Enlace a WhatsApp para contacto directo -->
+<a class="whatsapp"
+href="https://wa.me/+5493731508760" 
+target="_blank">💬</a>
+
+<script src="script.js"></script> <!-- Enlace al archivo JavaScript para funcionalidades adicionales -->
+
+</footer>
+
+</body>
+
+</html>
