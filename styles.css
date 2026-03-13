@@ -1,0 +1,184 @@
+body{ /* aplicamos en toda la pag body*/
+
+    margin:0; /*eliman bordes del navegador*/
+    font-family: 'Segoe UI', sans-serif; /* define la tipografia */
+    background: #f5e9e2;
+}
+
+
+header{ /* esta parte es del navbar fijo */
+    
+    position: fixed; /*Mantiene el menu fijo al haacer scroll */
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+    
+    background:#8b6b61;
+    color: white;
+
+    z-index:1000; /* Asegura que este sobre todo */
+
+}
+
+nav a{
+
+    color: white;
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-weight: 500;
+
+}
+
+
+.hero{
+
+    height: 90vh; /*le damos el tamano para que ocupe toda la pantalla */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient( /*crea capa de color encima de la imagen */
+        rgb(245,233,226,0.9)
+        rgb(245,233,226,0.9)
+    ),
+
+    url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+
+    background-size: cover; /* la imagen cubre todo */
+
+}
+
+.hero button{ /*Boton del HERO */
+
+    padding: 15px 35px;
+
+    background: #c89fa3;
+    color: white;
+
+    border: none;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+}
+
+section{
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+}
+
+.articulos{
+
+    display: flex;
+    flex-wrap: wrap; /* permite que se acomoden en varias filas */
+
+    gap: 30px; /* Es el espacio entre articulos */
+
+}
+
+.articulos{
+    background: white;
+
+    padding: 25px;
+
+    max-width: 300px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0,0,0,0.1);
+
+}
+
+
+form{ /* seccion de formulario */
+
+    max-width: 400px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+input, select{
+    
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+}
+
+.whatsapp{
+
+    position:fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    background:#25D366 ;
+
+    color: white;
+
+    font-size: 30px;
+
+    padding: 15px;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+}
+
+
+body::before{
+
+    content:"";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    background-image:url("https://www.transparenttextures.com/patterns/leaf.png");
+
+    opacity: 0.05; /* Controla la transparencia */
+    pointer-events: none; /* evita bloquear clicks */
+
+}
+
+
+.reveal{
+
+    opacity: 1;
+    transform: translateY(40px);
+    transition: 1s;
+
+}
+
+.reveal.active{
+
+    opacity: 1;
+    transform: translate(0);
+}
